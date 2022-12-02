@@ -4,7 +4,7 @@ public class LandLineDiscount implements Discount{
 	
 	@Override
 	public double AddDiscount() {
-		return 0.52;
+		return 0.57;
 	}
 	@Override
 	public void getDescription() {
