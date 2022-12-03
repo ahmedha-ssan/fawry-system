@@ -1,9 +1,12 @@
 
-public interface Discount {
+public abstract class Discount {
 	String description ="Select your discount ";
 	
-	public void getDescription();
+	protected String getDescription() {
+		return description;
+		
+	}
 
-	public double AddDiscount();
+	public abstract double AddDiscount();
 	
 }

@@ -1,17 +1,10 @@
 
-public abstract class Decorator implements Discount{
+public abstract class Decorator extends Discount{
 	protected Discount discount;
-	public Decorator(Discount discount) {
-		this.discount=discount;
-	}
 	
-	public void getDescription() {
-		this.discount.getDescription();
-	}
 	
-	public double AddDiscount() {
-		this.discount.AddDiscount();
-		return 0;
-	}
+	public abstract double AddDiscount();
+	
+	public abstract String getDescription();
+	
 }
-//abstract String getDescription()

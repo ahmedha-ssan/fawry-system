@@ -1,16 +1,17 @@
 
-public class InternetDiscount implements Discount{
+public class InternetDiscount extends Discount{
 	
-	
-	@Override
+	public InternetDiscount() {
+		description ="Internet Discount";
+	}
 	public double AddDiscount() {
 		return 0.22;
 	}
-	@Override
-	public void getDescription() {
+	//@Override
+	//public void getDescription() {
 		// TODO Auto-generated method stub
-		System.out.println("Internet Discount ");
-	}
+		//System.out.println("Internet Discount ");
+	//}
 }
 
 

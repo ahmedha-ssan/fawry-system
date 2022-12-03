@@ -1,15 +1,16 @@
 
-public class LandLineDiscount implements Discount{
+public class LandLineDiscount extends Discount{
 
-	
+	public LandLineDiscount(String des) {
+		description=des;
+	}
 	@Override
 	public double AddDiscount() {
-		return 0.57;
+		return 0.52;
 	}
-	@Override
-	public void getDescription() {
-		// TODO Auto-generated method stub
-		System.out.println("Land Line Discont  ");
-	}
+	//@Override
+	//public void getDescription() {
+		//System.out.println("Land Line Discont  ");
+	//}
 }
 

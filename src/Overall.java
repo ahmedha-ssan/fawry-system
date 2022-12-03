@@ -2,17 +2,21 @@ public class Overall extends Decorator {
 
 	Discount discount;
 	
-	public Overall(Discount discount) {
-		super(discount);
+	public Overall(Discount dis) {
+		discount=dis;
+		//super(discount);
 	}
 	
-	public void getDescription() {
-		discount.getDescription();
-		System.out.println(  ", Overall");
+	public String getDescription() {
+		return discount.getDescription()+"  Overall discount";
 	}
 
 	public double AddDiscount() {
-		return discount.AddDiscount()-0.20;
-	}
+		//double x=
+		//System.out.println( +0.20);
 
+		return 0.20+discount.AddDiscount();
+	}
+	
 }
+

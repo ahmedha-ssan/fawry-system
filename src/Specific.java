@@ -2,19 +2,20 @@
 public class Specific extends Decorator {
 	
 	Discount discount;
-	public Specific(Discount discount) {
-		super(discount);
+	public Specific(Discount dis) {
+		discount=dis;
 	}
 
-	public void getDescription() {
-		discount.getDescription();
-		System.out.println(  ", Specific");
+	public String getDescription() {
+		return discount.getDescription()+"  Specific ";
 	}
 
 	public double AddDiscount() {
-		return discount.AddDiscount()-0.70;
+		//double x=discount.AddDiscount();
+		return 0.70+discount.AddDiscount();
 	}
 	
 }
+
 
 
