@@ -24,3 +24,8 @@
 /MobileRecharge.class
 /InternetPayment.class
 /Donation.class
+/LandLineMonthlyReceipt.class
+/LandLineQuarterReceipt.class
+/DonationCancerHospital.class
+/DonationNGOs.class
+/DonationSchools.class
