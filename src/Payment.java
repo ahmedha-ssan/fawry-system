@@ -1,3 +1,3 @@
-public interface Payment {
-	public void pay(int i);
+public interface Payment{
+	void pay();
 }
