@@ -1,3 +1,37 @@
 /Admin.class
+<<<<<<< HEAD
 /Decorator.class
 /Discount.class
+=======
+/DiscountChange.class
+/DiscountDisplay.class
+/DonationDiscount.class
+/InternetDiscount.class
+/LandLineDiscount.class
+/Mainn.class
+/MobileRechargeDiscount.class
+/MobileRechargeEtisalat.class
+/MobileRechargeOrange.class
+/MobileRechargeVoda.class
+/MobileRechargeWe.class
+/Overall.class
+/RefundChange.class
+/RefundDisplay.class
+/ServicesProvider.class
+/Specific.class
+/User.class
+/InternetPaymentEtisalat.class
+/InternetPaymentOrange.class
+/InternetPaymentVoda.class
+/InternetPaymentWe.class
+/Services.class
+/MobileRecharge.class
+/InternetPayment.class
+/Donation.class
+/LandLineMonthlyReceipt.class
+/LandLineQuarterReceipt.class
+/DonationCancerHospital.class
+/DonationNGOs.class
+/DonationSchools.class
+/Account.class
+>>>>>>> 8aee22f8e133206cc65e917a889a933345756da5
