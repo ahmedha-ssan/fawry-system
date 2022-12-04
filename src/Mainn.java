@@ -9,11 +9,13 @@ public class Mainn {
 		User obj1 = new DiscountDisplay("Obj1");
 		User obj2 = new RefundDisplay("Obj2");
 		//register observers
-		dis.RegisterUser(obj1);
-		dis.RegisterUser(obj2);
+		
 		//observers intract with the subject
-		obj1.setSubject(dis);
-		obj2.setSubject(dis);
+		dis.RegisterUser(obj1);
+		dis.RemoveUser(obj1);
+		dis.RegisterUser(obj2);
+		//display from user
+		obj1.Display();
 		//check if any update is available
 		obj1.UpDate();
 		dis.GetUpDate(obj2);

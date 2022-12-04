@@ -9,9 +9,6 @@ public class DonationDiscount extends Discount{
 		return 0.72;
 	}
 	
-	//@Override
-	//public void getDescription() {
-	//	System.out.println("Donation Discount");
-	//}
+
 }
 

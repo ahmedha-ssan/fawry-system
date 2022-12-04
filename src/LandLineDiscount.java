@@ -8,9 +8,6 @@ public class LandLineDiscount extends Discount{
 	public double AddDiscount() {
 		return 0.52;
 	}
-	//@Override
-	//public void getDescription() {
-		//System.out.println("Land Line Discont  ");
-	//}
+
 }
 
