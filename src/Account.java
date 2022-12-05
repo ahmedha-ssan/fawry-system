@@ -28,7 +28,7 @@ public class Account {
 	}
 
 	public void SignUp(String name, String email, String password) {
-		System.out.println("Your are now in sign in ..");
+		System.out.println("Your are now in sign up ..");
 		System.out.println(("Here is your inforamtion "));
 		this.UserName = name;
 		
