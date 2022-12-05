@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class DiscountChange implements Admin{
 
 	private ArrayList<User> Users;
-	private String email ;
 	public DiscountChange() {
 		Users =new ArrayList<User>();
 	}
@@ -26,29 +25,13 @@ public class DiscountChange implements Admin{
 	}
 
 	public void Notify() {
-		for (int i = 0; i <2; i++) { 
-			U.UpDate();; 
+		if(Users==null) {
+			System.out.println("User is not exist...  ");
 		}
-		System.out.println("User Update successfuly...  ");
+		else {
+			System.out.println("User notify successfuly for the last discount add to the system...  ");
+		}
 	}
-	
-	
-
-	public void setChanges(String email) { 
-		System.out.println("Discount add to your bill for user :"+email);
-		this.email = email;
-		//Notify();
-	}
-
-
-	@Override
-	public Object GetUpDate(User U) {
-		return this.email;		
-	}
-
-
-	
-
 }
 
 

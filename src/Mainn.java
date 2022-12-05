@@ -18,7 +18,6 @@ public class Mainn {
 		obj1.Display();
 		//check if any update is available
 		obj1.UpDate();
-		dis.GetUpDate(obj2);
 		obj2.UpDate();
         System.out.println("/////////////////////////////////////////////////////////////////");
         System.out.println("Test Discount (Decorator pattern)...");

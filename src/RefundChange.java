@@ -3,8 +3,6 @@ import java.util.ArrayList;
 public class RefundChange implements Admin{
 
 	private ArrayList<User> Users;
-	private String email ;
-	
 	User U;
 	
 	public RefundChange() {
@@ -16,7 +14,7 @@ public class RefundChange implements Admin{
 			System.out.println("Enter your name correct please..  ");
 		}
 		Users.add(U);
-		System.out.println("Refund added successfuly...  ");
+		System.out.println("User added successfuly...  ");
 	}
 
 
@@ -33,32 +31,15 @@ public class RefundChange implements Admin{
 
 
 	public void Notify() {
-		for (int i = 0; i <2; i++) { 
-			U.UpDate(); 
+		if(Users==null) {
+			System.out.println("User is not exist...  ");
 		}
-		System.out.println("Refund Update successfuly...  ");
+		else {
+			System.out.println("User notify successfuly for the last Refund add ...  ");
+
+		}
 	}
 
 
-
-	public void setChanges(String email) { 
-		System.out.println("Refound add to your bill for user :"+email);
-		this.email = email;
-		Notify();
-	}
-
-
-	@Override
-	public Object GetUpDate(User U) {
-		return this.email;		
-	}
+	
 }
-
-
-	
-	
-	
-
-
-
-
