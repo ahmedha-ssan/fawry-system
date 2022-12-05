@@ -4,9 +4,7 @@ public abstract class Discount {
 	
 	protected String getDescription() {
 		return description;
-		
 	}
-
 	public abstract double AddDiscount();
 	
 }
