@@ -11,4 +11,8 @@ public class LandLine extends Services{
 		//System.out.println("services "+ name+" add ...");
 		//return null;
 	//}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c004f1bce68044480b1342d733e1237bf6eb8ca8

@@ -12,9 +12,9 @@ public class CashPay implements Payment {
 	}
 
 	@Override
-	public void pay(int total) {
+	public void pay() {
 		if (UserName != null)
-			System.out.println(total + " Cash on pay ");
+			System.out.println("correct user info Cash on pay ");
 		else
 			System.out.println(" Enter a correct cridit card number please...");
 	}

@@ -1,4 +1,8 @@
 /Admin.class
+<<<<<<< HEAD
+/Decorator.class
+/Discount.class
+=======
 /DiscountChange.class
 /DiscountDisplay.class
 /DonationDiscount.class
@@ -24,7 +28,21 @@
 /MobileRecharge.class
 /InternetPayment.class
 /Donation.class
+<<<<<<< HEAD
 /LandLine.class
 /Payment.class
 /CashPay.class
 /CreditCard.class
+=======
+/LandLineMonthlyReceipt.class
+/LandLineQuarterReceipt.class
+/DonationCancerHospital.class
+/DonationNGOs.class
+/DonationSchools.class
+/Account.class
+>>>>>>> 8aee22f8e133206cc65e917a889a933345756da5
+>>>>>>> c004f1bce68044480b1342d733e1237bf6eb8ca8
+/OnlineWallet.class
+/Refund.class
+/RejectRefund.class
+/AcceptRefund.class
