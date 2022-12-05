@@ -65,7 +65,35 @@ public class Mainn {
 
 		System.out.println();
 		System.out.println("/////////////////////////////////////////////////////////////////");
-	
+		
+		System.out.println();
+
+		System.out.println("Test Discount with discount decorator (Decorator pattern)...");
+		// decorator to add cost of each discount..
+		// test 1
+		Discount discount = new LandLineDiscount("Land Line Discount");
+		System.out.println(discount.getDescription() + " $ " + discount.AddDiscount());
+		// test 2
+		Discount discount2 = new LandLineDiscount("Land Line Discount with overall discount ");
+		discount2 = new Specific(discount2);
+		System.out.println(discount2.getDescription() + " $ " + discount2.AddDiscount());
+		// test 2
+		Discount discount3 = new LandLineDiscount("Land Line Discount with overall discount and specific ");
+		discount3 = new Overall(discount3);
+		discount3 = new Specific(discount3);
+		System.out.println(discount3.getDescription() + " $ " + discount3.AddDiscount());
+		System.out.println();
+
+		System.out.println("/////////////////////////////////////////////////////////////////");
+		System.out.println();
+		Services service1 = new Services();
+		service1.infoo();
+		// objects for providers
+
+		System.out.println();
+
+		System.out.println("Hope to see you again thanks for use of our system");
 	}
+	
 
 }
