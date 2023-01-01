@@ -1,31 +1,31 @@
 package com.SW2.Phase2.FawryServices.User.model;
 
 public class Account {
-    public String Password ;
-    public String Email ;
-    public String UserName;
+    public String password ;
+    public String email ;
+    public String userName;
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        this.userName = userName;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 }

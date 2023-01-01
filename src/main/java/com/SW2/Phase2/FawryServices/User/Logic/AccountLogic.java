@@ -1,24 +1,25 @@
 package com.SW2.Phase2.FawryServices.User.Logic;
 
+import com.SW2.Phase2.FawryServices.User.model.Account;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 @Service
 public class AccountLogic {
-    private static List<String> AccountList;
-
+    private static List<Account> AccountList;
+    Account account=new Account();
     public AccountLogic() {
         AccountList = new ArrayList<>();
     }
 
     public String SignIn(String email,String password) {
         if (email.equals("ahmed@gmail") && password.equals("123")) {
-            AccountList.add(email);
+            AccountList.add(account);
             return "Successful Sign in Ahmed !";
         }
         else if (email.equals("Saad@gmail") && password.equals("321")) {
-            AccountList.add(email);
+            AccountList.add(account);
             return "Successful Sign in Saad !";
         }
         return "Error Sign in";

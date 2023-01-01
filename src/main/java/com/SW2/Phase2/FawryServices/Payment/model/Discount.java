@@ -2,10 +2,10 @@ package com.SW2.Phase2.FawryServices.Payment.model;
 
 public abstract class Discount {
     private String description ;
-    private String amount;
+    private double amount;
 
     public Discount() {}
-    public Discount(String description ,String amount) {
+    public Discount(String description ,double amount) {
         this.description =description;
         this.amount =amount;
     }
@@ -13,16 +13,15 @@ public abstract class Discount {
         this.description =description;
     }
     public String getDescription() {
-        return "Here is all discounts available : ";
+        description="Here is all discounts available : ";
+        return description;
     }
-    public void setAmount(String amount) {
+    public void setAmount(double amount) {
         this.amount =amount;
     }
-    public String getAmount() {
+    public double getAmount() {
         return amount;
     }
-
-
     public double getDiscount() {
         return 33;
     }

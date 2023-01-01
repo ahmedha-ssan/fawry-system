@@ -10,6 +10,7 @@ import java.util.List;
 @Service
 public class DonationCancerHospitalLogic implements ServicesProvider{
     private static List<Donation> donationList;
+    Donation donation=new Donation();
 
     public DonationCancerHospitalLogic(){
         this.donationList = new ArrayList<>();
@@ -32,6 +33,6 @@ public class DonationCancerHospitalLogic implements ServicesProvider{
         return null;
     }
     public double PayBill() {
-        return 500;
+        return donation.getPayment();
     }
 }

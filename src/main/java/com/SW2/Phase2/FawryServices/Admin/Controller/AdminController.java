@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.*;
 public class AdminController {
     private final AcceptRefundLogic acceptRefundLogic =new AcceptRefundLogic();
     @PostMapping(value = "/Admin/Accept/Refund")
-    public String AcceptState(){
-        return acceptRefundLogic.state();
+    public String AcceptState(@RequestBody Refund refund){
+        return refund.getServiceName()+" "+refund.getAmount()+"  $ status :"+acceptRefundLogic.state();
     }
     ///////////////////////////////////////////////////
     private final RejectRefundLogic rejectRefundLogic =new RejectRefundLogic();
     @PostMapping(value = "/Admin/Reject/Refund")
-    public String RejectState(){
-        return rejectRefundLogic.state();
+    public String RejectState(@RequestBody Refund refund){
+        return  refund.getServiceName()+" "+refund.getAmount()+"  $ status :"+rejectRefundLogic.state();
     }
     ///////////////////////////////////////////////////
     private final DiscountChangeLogic discountChangeLogic =new DiscountChangeLogic();
@@ -62,7 +62,7 @@ public class AdminController {
         return refundLogic.listRefund(name);
     }
     ///////////////////////////////////////////////////
-    // /Refund/listTransaction?UserName=Judi
+    // /Refund/listTransaction?UserName=Ahmed
     private final TransactionLogic transactionLogic=new TransactionLogic();
     @PostMapping(value = "/Refund/listTransaction")
     public String getlistTransaction(@RequestParam("UserName") String UserName){

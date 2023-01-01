@@ -17,6 +17,9 @@ public class ServicesLogic {
     CreditCard creditCard=new CreditCard();
     OnlineWallet onlineWallet=new OnlineWallet();
     CashPay cashPay=new CashPay();
+    OnlineWalletLogic onlineWalletLogic=new OnlineWalletLogic();
+    CashPayLogic cashPayLogic=new CashPayLogic();
+    CreditCardLogic creditCardLogic =new CreditCardLogic();
 
     private static List<Services>servicesList = null;
 
@@ -59,10 +62,6 @@ public class ServicesLogic {
             }
         return "Name is not exist";
     }
-
-    OnlineWalletLogic onlineWalletLogic=new OnlineWalletLogic();
-    CashPayLogic cashPayLogic=new CashPayLogic();
-    CreditCardLogic creditCardLogic =new CreditCardLogic();
 
     public String AddProvider() {
         return  " Admin add provider successfully";

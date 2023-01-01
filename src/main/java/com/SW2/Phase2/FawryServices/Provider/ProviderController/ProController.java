@@ -10,7 +10,7 @@ public class ProController {
     private final DonationCancerHospitalLogic donationCancerHospitalLogic =new DonationCancerHospitalLogic();
     @PostMapping(value = "/Donation/Cancer")
     public String addDonationCancer(@RequestBody Donation donation){
-        return donationCancerHospitalLogic.AddServices(donation)+" Donation Schools bill is : "+donationCancerHospitalLogic.PayBill();
+        return donationCancerHospitalLogic.AddServices(donation)+" Donation Cancer hospital bill is : "+donationCancerHospitalLogic.PayBill();
 
     }
     @GetMapping(value = "/Donation/Cancer/{id}")

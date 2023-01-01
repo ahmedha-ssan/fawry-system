@@ -2,16 +2,16 @@ package com.SW2.Phase2.FawryServices.Payment.model;
 
 public class DonationDiscount extends Discount{
     private String description ;
-    private String amount;
+    private double amount;
     public DonationDiscount(String des) {
         description=des;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
-    public String getAmount() {
+    public double getAmount() {
         return amount;
     }
 
@@ -23,8 +23,6 @@ public class DonationDiscount extends Discount{
         return description;
     }
     public double AddDiscount() {
-        return 0.72;
+        return 1.3;
     }
-
-
 }

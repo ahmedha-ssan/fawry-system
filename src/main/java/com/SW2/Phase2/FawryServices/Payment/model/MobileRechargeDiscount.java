@@ -2,7 +2,7 @@ package com.SW2.Phase2.FawryServices.Payment.model;
 
 public class MobileRechargeDiscount extends Discount{
     private String description ;
-    private String amount;
+    private double amount;
     public MobileRechargeDiscount(String des) {
         description=des;
     }
@@ -14,11 +14,11 @@ public class MobileRechargeDiscount extends Discount{
         return description;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
-    public String getAmount() {
+    public double getAmount() {
         return amount;
     }
     public double AddDiscount() {

@@ -1,8 +1,8 @@
 package com.SW2.Phase2.FawryServices.Provider.Model;
 
 public class CreditCard{
-    private String UserName;
-    private double PayTotal;
+    private String userName;
+    private double payTotal;
     private int id;
 
     public void setId(int id) {
@@ -13,19 +13,19 @@ public class CreditCard{
         return id;
     }
     public void setPayTotal(double payTotal) {
-        this.PayTotal = payTotal;
+        this.payTotal = payTotal;
     }
 
     public double getPayTotal() {
-        return PayTotal;
+        return payTotal;
     }
 
     public void setUserName(String userName) {
-        this.UserName = userName;
+        this.userName = userName;
     }
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
 

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class DiscountController{
-
+///////
 /////////////////////////////////////////////////
     private final LandLineLogic landLineLogic=new LandLineLogic();
     Discount discount=new LandLineDiscount("Land Line Discount");
@@ -14,8 +14,8 @@ public class DiscountController{
     public String addLLDisc(){
         return discount.getDescription()+"$"+discount.AddDiscount();
     }
-    @GetMapping(value = "/Discount/LandLine/{Name}")
-    public LandLineDiscount getLLdis(@PathVariable("name") String Name){
+    @GetMapping(value = "/Discount/LandLine/{description}")
+    public LandLineDiscount getLLdis(@PathVariable("description") String Name){
         return landLineLogic.getDiscount(Name);
     }
 
@@ -26,8 +26,8 @@ public class DiscountController{
     public String addDDisc(){
         return discount3.getDescription()+"$"+discount3.AddDiscount();
     }
-    @GetMapping(value = "/Discount/Donation/{Name}")
-    public DonationDiscount getDdis(@PathVariable("Name") String Name){
+    @GetMapping(value = "/Discount/Donation/{description}")
+    public DonationDiscount getDdis(@PathVariable("description") String Name){
         return donationLogic.getDiscount(Name);
     }
 //////////////////////////////////////////////////
@@ -55,7 +55,7 @@ public class DiscountController{
 //////////////////////////////////////////////////
     private final OverallLogic overallLogic=new OverallLogic();
     Discount discount6=new OverallLogic();
-    @PostMapping(value = "/Discount/MobileRecharge/Specific")
+    @PostMapping(value = "/Discount/MobileRecharge/Overall")
     public String addODisc(){
         discount6=new LandLineDiscount("Mobile Recharge Discount");
         return  discount6.getDescription()+"$"+discount6.AddDiscount();
@@ -93,4 +93,3 @@ public class DiscountController{
     }
 /////////////////////////////////////////////////
 }
-

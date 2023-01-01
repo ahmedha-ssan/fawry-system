@@ -1,19 +1,19 @@
 package com.SW2.Phase2.FawryServices.Provider.Model;
 
 public class Donation extends Services{
-    private String ServicesName ;
-    private double Payment;
+    private String servicesName ;
+    private double payment;
     private int id;
 
     @Override
+    public void setPayment(double payment) {
+        this.payment = payment;
+    }
+    @Override
     public double getPayment() {
-        return Payment;
+        return payment;
     }
 
-    @Override
-    public void setPayment(double payment) {
-        Payment = payment;
-    }
 
     public int getId() {
         return id;
@@ -23,15 +23,16 @@ public class Donation extends Services{
         this.id = id;
     }
 
-    @Override
-    public String getServicesName() {
-        return ServicesName;
-    }
 
     @Override
     public void setServicesName(String servicesName) {
-        ServicesName = servicesName;
+        this.servicesName = servicesName;
     }
+    @Override
+    public String getServicesName() {
+        return servicesName;
+    }
+
 
 
 }

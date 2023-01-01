@@ -18,9 +18,9 @@ public class LandLineLogic{
         landLineDiscountList.add(landLineDiscount );
         return "land Line Discount added successfully it costs : "+landLineDiscount.AddDiscount();
     }
-    public LandLineDiscount getDiscount(String Name){
+    public LandLineDiscount getDiscount(String description){
         for (LandLineDiscount LandLineDiscountDB:landLineDiscountList) {
-            if(LandLineDiscountDB.getDescription()==Name){
+            if(LandLineDiscountDB.getDescription()==description){
                 return LandLineDiscountDB;
             }
         }

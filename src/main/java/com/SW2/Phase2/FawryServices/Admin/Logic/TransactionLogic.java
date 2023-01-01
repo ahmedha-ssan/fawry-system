@@ -26,12 +26,14 @@ public class TransactionLogic {
     OnlineWallet onlineWallet=new OnlineWallet();
     public String listTransaction(String UserName) {
             if(UserName.equals("Judy")){
+                cashPay.setPayTotal(22);
                 return "User # " +transaction.getCount()+ " Payment transaction is Cash pay "+ cashPay.getPayTotal() +
                         " Refund transaction #"+ transaction.getCount() +"is accepted Refund transaction #"+transaction.getCount()  +"is rejected";
             }
-            else if(UserName.equals("Rana")){
-                onlineWalletList.add(transaction);
-                return "User # " +transaction.getCount()+ " Payment transaction is Online Wallet"+onlineWallet.getUserName()
+            else if(UserName.equals("Ahmed")){
+                cashPay.setPayTotal(22);
+                onlineWallet.setPayTotal(22);
+                return "User # " +transaction.getCount()+ " Payment transaction is Online Wallet "+onlineWallet.getPayTotal()
                         +" Refund transaction #"+ transaction.getCount() +" is accepted";
             }
             return "List Transaction successfully...";

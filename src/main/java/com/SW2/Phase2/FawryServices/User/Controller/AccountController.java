@@ -2,6 +2,7 @@ package com.SW2.Phase2.FawryServices.User.Controller;
 
 import com.SW2.Phase2.FawryServices.User.Logic.AccountLogic;
 import com.SW2.Phase2.FawryServices.User.Logic.DiscountDisplayLogic;
+import com.SW2.Phase2.FawryServices.User.Logic.RefundDisplayLogic;
 import com.SW2.Phase2.FawryServices.User.model.Userr;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,12 +30,22 @@ public class AccountController {
     //////////////////////////////////////////////////////
     private DiscountDisplayLogic discountDisplayLogic =new DiscountDisplayLogic();
      @PostMapping(value = "/Discount/UpDate")
-    public String Update(@RequestBody Userr userr) {
+    public String UpDdate(@RequestBody Userr userr) {
         return discountDisplayLogic.UpDate(userr);
     }
     @PostMapping(value = "/Discount/Display")
-    public String Display(Userr userr) {
+    public String DisplayD(Userr userr) {
         return discountDisplayLogic.Display(userr);
+    }
+    //////////////////////////////////////////////////////
+    private RefundDisplayLogic refundDisplayLogic =new RefundDisplayLogic();
+    @PostMapping(value = "/Refund/UpDate")
+    public String UpdateR(@RequestBody Userr userr) {
+        return refundDisplayLogic.UpDate(userr);
+    }
+    @PostMapping(value = "/Refund/Display")
+    public String DisplayR(Userr userr) {
+        return refundDisplayLogic.Display(userr);
     }
     //////////////////////////////////////////////////////
 }

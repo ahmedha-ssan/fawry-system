@@ -2,7 +2,7 @@ package com.SW2.Phase2.FawryServices.Provider.Model;
 
 public class OnlineWallet {
     private String email;
-    private String UserName;
+    private String userName;
     private int password;
     private double payTotal;
     private int id;
@@ -40,10 +40,10 @@ public class OnlineWallet {
     }
 
     public void setUserName(String userName) {
-        this.UserName = userName;
+        this.userName = userName;
     }
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 }

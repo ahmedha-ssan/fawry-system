@@ -1,8 +1,8 @@
 package com.SW2.Phase2.FawryServices.Admin.Model;
 
 public class Refund {
-    public String ServiceName;
-    public double Amount;
+    public String serviceName;
+    public double amount;
     public int count;
 
     public void setCount(int count) {
@@ -16,18 +16,18 @@ public class Refund {
     }
 
     public void setAmount(double amount) {
-        Amount = amount;
+        this.amount = amount;
     }
 
     public double getAmount() {
-        return Amount;
+        return amount;
+    }
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
     }
 
     public String getServiceName() {
-        return ServiceName;
+        return serviceName;
     }
 
-    public void setServiceName(String serviceName) {
-        ServiceName = serviceName;
-    }
-}
+   }
