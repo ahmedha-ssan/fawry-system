@@ -1,5 +1,5 @@
-# PrimeRebo
-
+...The whole source code is written by Ahmed A. Hassan...
+Language and technology used in the project (java, SOLID principles, design patterns, MAVEN, RESTFUL API, SDLC)+ Documentation.
 ---------------------------------------------------------------------------------------------------------------
 (i) How to build the project...
     -> import as a maven project using eclipse enterprise edition and browse to the path of the project
